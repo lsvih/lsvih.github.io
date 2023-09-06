@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enhancing Pre-trained Chinese Character Representation with Word-aligned Attention</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .img{
+        width: 100%;
+      }
+      .img img{
+        width: 100%;
+      }
+
+      .img-70{
+        width: 100%;
+      }
+      .img-70 img{
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+    </textarea>
+    <script src="../remark.js">
+    </script>
+    <script>
+      var t = document.getElementById('source')
+      for(var i = 1;i <= 12;i++){
+          t.textContent += '\n\n.img[![](img/Slide' + i + '.jpeg)]\n\n---';
+      }
+      t.textContent = t.textContent.substring(0,t.textContent.length - 3)
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
